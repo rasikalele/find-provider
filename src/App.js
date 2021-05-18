@@ -4,7 +4,6 @@ import Providers from "./components/ProviderList";
 import ProviderDetails from "./components/ProviderDetails";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useLocation, useState } from "react-router-dom";
-import ProviderDetails from "./components/ProviderDetails";
 
 function App() {
   return (
