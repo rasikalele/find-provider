@@ -4,7 +4,7 @@ import Providers from "./components/ProviderList";
 import ProviderDetails from "./components/ProviderDetails";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { useLocation, useState } from "react-router-dom";
-import Courses from "./components/ProviderDetails";
+import ProviderDetails from "./components/ProviderDetails";
 
 function App() {
   return (
@@ -16,14 +16,12 @@ function App() {
         <article>
           <Route exact path="/" component={Providers} />
         </article>
-        {/* <Route exact path="/details" component={Providers}/> */}
-        {/* <Route exact path="/" component={Providers}/> */}
         <Route exact path="/details/:id">
-          <Courses />
+          <ProviderDetails />
         </Route>
 
         <Route path="/courses">
-          <Courses />
+          <ProviderDetails />
         </Route>
       </Router>
 
