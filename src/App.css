@@ -40,7 +40,7 @@ body{
 }
 /* Style the header */
 header {
-  background-color: #666;
+  background-color: #21749e;
   padding: 20px;
   text-align: center;
   font-size: 20px;
@@ -53,21 +53,6 @@ section {
   display: flex;
 }
 
-/* Style the navigation menu */
-nav {
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  background: #ccc;
-  padding: 20px;
-}
-
-/* Style the list inside the menu */
-nav ul {
-  list-style-type: none;
-  padding: 0;
-}
-
 /* Style the content */
 article {
   flex: 3;
@@ -77,10 +62,14 @@ article {
 
 /* Style the footer */
 footer {
-  background-color: #777;
+  position: fixed;
+  background-color: #21749e;
   padding: 10px;
   text-align: center;
   color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */

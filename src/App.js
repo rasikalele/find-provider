@@ -3,13 +3,12 @@ import "./App.css";
 import Providers from "./components/ProviderList";
 import ProviderDetails from "./components/ProviderDetails";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import { useLocation, useState } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <header>
-        <h2>Your next provider Search starts here...!!</h2>
+        <h2>Your next provider search starts here...!!</h2>
       </header>
       <Router>
         <article>

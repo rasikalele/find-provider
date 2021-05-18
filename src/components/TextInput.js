@@ -4,7 +4,6 @@ import styles from "./ProviderList.module.css";
 
 export default function TextInput({ label, ...props }) {
   const [field, meta] = useField(props);
-  let error = meta.touched && meta.error ? true : false;
 
   return (
     <div className={`${styles.textInput} ${error ? styles.error : ""}`}>
