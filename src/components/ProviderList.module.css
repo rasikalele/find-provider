@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  .searchBar {
+    /* background: red; */
+    background-image: url('search.png');
+    background-size: 25px;
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 10%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 12px;
+  }
+  .searchFilterButton{
+    border-radius: 3px;;
+  }
+  .providerUl {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin: auto;
+
+  }
+  
+  .providerUl li  {
+    border: 1px solid #ddd;
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    display: block
+  }
+  
+  .providerUl li:hover:not(.header) {
+    background-color: #21749e;
+  }
+
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  .fieldStyle {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  .col15 {
+    float: left;
+    width: 7%;
+    margin-top: 6px;
+  }
+  
+  .col35 {
+    float: left;
+    width: 15%;
+    margin-top: 6px;
+  }
+  .searchInput {
+    /* float: left; */
+    width: 25%  !important;
+    display: initial;
+    margin: 10px;
+   
+  }
+  .noData {
+  height:307px;
+  }
+  .marginCenter{
+      margin-left: 10%;
+  }
+  .row{
+    margin: 10px;
+  }
+
+  .headerColor{
+    color: #21749e;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .col15, .col35, .searchInput,input[type=submit] {
+      width: 100% !important;
+      margin-top: 0;
+    }
+  }
